@@ -1,0 +1,238 @@
+    1  ls
+    2  cd __MACOSX/
+    3  ls
+    4  ls
+    5  pwd
+    6  pwd
+    7  cd
+    8  cd Desktop/
+    9  cd shell-lesson
+   10  ls
+   11  pwd
+   12  cd Downloads
+   13  cd Downloads/
+   14  ls
+   15  clear
+   16  pwd
+   17  pwd
+   18  cd
+   19  ls
+   20  pwd
+   21  cd Desktop/
+   22  ls -l
+   23  ls -h
+   24  ls -lh
+   25  pwd
+   26  clear
+   27  pwd
+   28  cd /c/Users/cnieman/Desktop/
+   29  cd /
+   30  ls
+   31  pwd
+   32  clear
+   33  cd -
+   34  pwd
+   35  ls -lh
+   36  cd Do
+   37  cd Documents
+   38  ls
+   39  cd
+   40  ls
+   41  pwd
+   42  ls
+   43  cd One
+   44  cd OneDrive
+   45  man
+   46  -help
+   47  ls --help
+   48  ls --help
+   49  clear
+   50  ls -- help
+   51  ls --help
+   52  cd -Ss
+   53  cd -sS
+   54  cd -lS
+   55  cd -Sl
+   56  ls -Sl
+   57  cd -lS
+   58  ls -lS
+   59  cd Desk
+   60  cd shell-lesson
+   61  pwd
+   62  pwd /cnieman
+   63  cd
+   64  ls -lS
+   65  cd shell-lesson
+   66  ls -S -s
+   67  ls -s -S
+   68  ls -s-S
+   69  ls -S -s
+   70  ls -sS
+   71  ls -Ss
+   72  ls -sS
+   73  clear
+   74  ls --help
+   75  ls -S
+   76  ls -S-s
+   77  ls -S s
+   78  ls -S
+   79  clear
+   80  ls
+   81  cd Desktop/
+   82  cd Desktop/shell-lesson
+   83  cd Desktop/shell-lesson/
+   84  cd shell-lesson
+   85  ls
+   86  ls -S
+   87  mkdir
+   88  mkdir firstdir
+   89  ls
+   90  cd firstdir/
+   91  pwd
+   92  cd ..
+   93  clear
+   94  ls -lh
+   95  cat 829-0.txt
+   96  clear
+   97  ls -lh
+   98  head 829-0.txt
+   99  tail 829-0.txt
+  100  head -n 20 829-0.txt
+  101  clear
+  102  less 829-0.txt
+  103  less 829-0.txt
+  104  ls
+  105  head 201403160_01_text.json
+  106  clear
+  107  ls
+  108  head 829-0.txt 33504-0.txt 
+  109  head *.txt
+  110  ls *.pdf
+  111  ls
+  112  ls *.tsv
+  113  mv 829-0.txt gulliver.txt
+  114  ls
+  115  cp gulliver.txt gulliver_copy.txt
+  116  ls
+  117  mv firstdir backup
+  118  ls
+  119  mv gulliver_copy.txt backup
+  120  ls
+  121  history
+  122  r
+  123  rm -r
+  124  r
+  125  rm
+  126  rm -r shell-lesson
+  127  mv firstdir backup
+  128  history > history.txt
+  129  ls
+  130  echo "library carpentry is awesome"
+  131  NAME = "Christine"
+  132  NAME="Christine"
+  133  echo "$NAME library carpentry is awesome"
+  134  echo $NAME
+  135  clear
+  136  touch a.txt b.txt c.txt d.txt
+  137  ls
+  138  for filename in ?.txt; do ecechoec;  clear; 
+  139  cd Desktop/shell-lesson
+  140  ls
+  141  for filename in ?.txt; do echo $filename; cp filename back_"$filename"; done
+  142  for filename in ?.txt; do echo "$filename"; cp "$filename" back_"$filename"; done
+  143  ls
+  144  done
+  145  ls
+  146  #!/bin/bash
+  147  nano
+  148  cd Desktop/shell-lesson
+  149  ls
+  150  ls '.sh'
+  151  ls "*.sh"
+  152  ls *.sh
+  153  ls .sh
+  154  bash my_first_bash_script.sh
+  155  nano
+  156  nano
+  157  ls *.sh
+  158  nano
+  159  ls *.sh
+  160  ls
+  161  mv my_bash_script my_bash_script.sh
+  162  mv my_second_bash_script my_second_bash_script.sh
+  163  ls
+  164  clear
+  165  ls -lhS
+  166  cat 2014-01_JA.tsv
+  167  wc *.tsv
+  168  wc -l *.tsv
+  169  wc -l *.tsv > lengths.txt
+  170  cat lengths.txt
+  171  sort -n lengths.txt > sorted-lengths.txt
+  172  head -n l sorted-lengths.txt
+  173  head -n 1 sorted-lengths.txt
+  174  wc -l *.tsv | sort -n | head -n 1
+  175  wc -l *.tsv | sort -n | head -n 1 | cat
+  176  ls
+  177  sort -w *.tsv |sort -s | cat
+  178  wc -w *.tsv |sort -s | cat
+  179  wc -w *.tsv |sort -n | tail -n 11
+  180  cat logfile.txt
+  181  date > logfile.txt
+  182  cat logfile.txt 
+  183  date >> logfile.txt | cat
+  184  cat logfile.txt
+  185  mkdir results
+  186  grep -c revolution *.tsv
+  187  grep - ci revolution *.tsv
+  188  grep -ci revolution *.tsv
+  189  grep -i revolution *.tsv > results/JAi-revolution
+  190  grep -i revolution *.tsv > results/JAi-revolution.tsv
+  191  ls
+  192  grep -i revolution *.tsv > results/$(date "+%Y-%m-%d")_JAi-revolution.txt
+  193  cd results
+  194  ls
+  195  grep -iwE 'fr[ae]nc[eh]' *.tsv
+  196  cd ../
+  197  grep -c
+  198  grep -iwE 'cultural' *.tsv
+  199  grep -c 'cultural' *.tsv
+  200  ls
+  201  grep -ic 'cultural' *africa.tsv
+  202  git config --list
+  203  git config --global user.name "Christine Nieman"
+  204  git config --global user.email "christine14nieman@gmail.com"
+  205  git config --list
+  206  pwd
+  207  ls
+  208  ls -l
+  209  ls - lh
+  210  ls -lh
+  211  cd Desktop
+  212  pwd
+  213  cd "things to learn"
+  214  cd ..
+  215  cd Documents
+  216  cd
+  217  cd Desktop/lcw2022
+  218  cd lcw2022
+  219  ls
+  220  ls -S
+  221  ls -lS
+  222  cd shell-lesson
+  223  cd firstdir
+  224  cat
+  225  cd Desktop/lcw2022/shell-lesson
+  226  head 829-0.txt
+  227  tail 820-0.txt
+  228  tail 829-0.txt
+  229  less 829-0.txt
+  230  cd Desktop/lcw2022/shell-lesson
+  231  head *.pdf
+  232  cp gulliver.txt gulliver_backup.txt
+  233  mv 829-0.txt gulliver.txt
+  234  cp gulliver.txt gulliver_backup.txt
+  235  mv gulliver_backup.txt backup
+  236  ls
+  237  head pg514.txt
+  238  history > history.txt
